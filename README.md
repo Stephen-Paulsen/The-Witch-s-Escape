@@ -1,6 +1,6 @@
 # The-Witch-s-Escape
 
-Small hangman style game but with a witcchery twist!
+Small hangman style game but with a mystic twist!
 
 guess the correct word to save yourself!
 
