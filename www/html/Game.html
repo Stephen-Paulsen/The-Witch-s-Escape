@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<title> The Witch's Escape </title>
+		
+		<meta http-equiv="Content-Type" content="text/html ;charset=UTF-8" >
+		
+		<meta name="description" content="Word game">
+		<meta name="author" content="Stephen Paulsen">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href="../css/Pendu.css" type="text/css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="../java/Pendu.js"></script>
+		 		
+	</head>
+	<body onload="User_Namer()">
+		
+		<div id="GameScreen">
+			<p id="HiddenWord"></p>
+			<p id="ScoreCounter"></p>
+			<p id="LivesCounter"></p>
+			<p id="UserName"></p>
+			<button type="button" id="Pause" onclick = "Pause_Menu()">Pause</button>
+			
+			<img id="Image1" class="pendu" src="../images/image1.png" alt="Pendu 1">
+			<img id="Image2" class="pendu sneaky" src="../images/image2.png" alt="Pendu 2">
+			<img id="Image3" class="pendu sneaky" src="../images/image3.png" alt="Pendu 3">
+			<img id="Image4" class="pendu sneaky" src="../images/image4.png" alt="Pendu 4">
+			<img id="Image5" class="pendu sneaky" src="../images/image5.png" alt="Pendu 5">
+			<img id="Image6" class="pendu sneaky" src="../images/image6.png" alt="Pendu 6">
+			<img id="Image7" class="pendu sneaky" src="../images/image7.png" alt="Pendu 7">
+		</div>
+		
+		<div id="EndGameBlock" class="sneaky" >
+			<p id="WinningAnnouncement" class="sneaky">You WON!</p>
+			<p id="LoosingAnnouncement" class="sneaky">You LOST!</p>
+			<p id="ScoreBoard" class="sneaky"></p>
+			
+			<button type="button" id="UnPause" class="sneaky" onclick = "UnPause_Menu()">Resume</button>
+			<br>
+			<button type="button" id="Continue" class="menu sneaky" onclick = "this.disabled = true; Continue()">Continue</button>
+			<br>
+			<button type="button" id="EndGame" class="menu" onclick = "this.disabled = true; location.href = 'Menu.html'">Go Back To Main Menu</button>
+		</div>
+		
+		<div id="Keyboard">
+			<button type="button" id="a" class="letters" onclick = "this.disabled = true;document.getElementById('a').innerHTML = a()">A</button>
+			<button type="button" id="b" class="letters" onclick = "this.disabled = true;document.getElementById('b').innerHTML = b()">B</button>
+			<button type="button" id="c" class="letters" onclick = "this.disabled = true;document.getElementById('c').innerHTML = c()">C</button>
+			<button type="button" id="d" class="letters" onclick = "this.disabled = true;document.getElementById('d').innerHTML = d()">D</button>
+			<button type="button" id="e" class="letters" onclick = "this.disabled = true;document.getElementById('e').innerHTML = e()">E</button>
+			<button type="button" id="f" class="letters" onclick = "this.disabled = true;document.getElementById('f').innerHTML = f()">F</button>
+			<button type="button" id="g" class="letters" onclick = "this.disabled = true;document.getElementById('g').innerHTML = g()">G</button>
+			<button type="button" id="h" class="letters" onclick = "this.disabled = true;document.getElementById('h').innerHTML = h()">H</button>
+			<button type="button" id="i" class="letters" onclick = "this.disabled = true;document.getElementById('i').innerHTML = i()">I</button>
+			<button type="button" id="j" class="letters" onclick = "this.disabled = true;document.getElementById('j').innerHTML = j()">J</button>
+			<button type="button" id="k" class="letters" onclick = "this.disabled = true;document.getElementById('k').innerHTML = k()">K</button>
+			<button type="button" id="l" class="letters" onclick = "this.disabled = true;document.getElementById('l').innerHTML = l()">L</button>
+			<button type="button" id="m" class="letters" onclick = "this.disabled = true;document.getElementById('m').innerHTML = m()">M</button>
+			<button type="button" id="n" class="letters" onclick = "this.disabled = true;document.getElementById('n').innerHTML = n()">N</button>
+			<button type="button" id="o" class="letters" onclick = "this.disabled = true;document.getElementById('o').innerHTML = o()">O</button>
+			<button type="button" id="p" class="letters" onclick = "this.disabled = true;document.getElementById('p').innerHTML = p()">P</button>
+			<button type="button" id="q" class="letters" onclick = "this.disabled = true;document.getElementById('q').innerHTML = q()">Q</button>
+			<button type="button" id="r" class="letters" onclick = "this.disabled = true;document.getElementById('r').innerHTML = r()">R</button>
+			<button type="button" id="s" class="letters" onclick = "this.disabled = true;document.getElementById('s').innerHTML = s()">S</button>
+			<button type="button" id="t" class="letters" onclick = "this.disabled = true;document.getElementById('t').innerHTML = t()">T</button>
+			<button type="button" id="u" class="letters" onclick = "this.disabled = true;document.getElementById('u').innerHTML = u()">U</button>
+			<button type="button" id="v" class="letters" onclick = "this.disabled = true;document.getElementById('v').innerHTML = v()">V</button>
+			<button type="button" id="w" class="letters" onclick = "this.disabled = true;document.getElementById('w').innerHTML = w()">W</button>
+			<button type="button" id="x" class="letters" onclick = "this.disabled = true;document.getElementById('x').innerHTML = x()">X</button>
+			<button type="button" id="y" class="letters" onclick = "this.disabled = true;document.getElementById('y').innerHTML = y()">Y</button>
+			<button type="button" id="z" class="letters" onclick = "this.disabled = true;document.getElementById('z').innerHTML = z()">Z</button>
+		</div>
+	</body>
+	
+</hmtl>
